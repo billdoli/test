@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000080; /* Navy blue background */
+            color: #000000; /* Black text */
+        }
+        .comment-box {
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #000000; /* Black background for comment box */
+        }
+        .comment-box button {
+            margin-bottom: 10px; /* Adjust this value to increase/decrease the gap between buttons */
+        }
+        video {
+            width: 450px; /* Set the width to 450 pixels */
+            height: 400px; /* Set the height to 400 pixels */
+            border: 2px solid #000080; /* Navy blue border around the video */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center text-light">My Video</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <video controls>
+                    <source src="https://drive.google.com/uc?export=download&id=1CFhebj6qAK7ktrNMeQntK-Xt1EwPw1sl" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="comment-box bg-light text-dark">
+                    <h4>Comments</h4>
+                    <!-- Button group for four buttons, displayed in a column -->
+                    <div class="btn-group-vertical">
+                        <button type="button" class="btn btn-primary btn-block">Cristiano Ronaldo is a Great footballer</button>
+                        <button type="button" class="btn btn-secondary btn-block">Button 2</button>
+                        <button type="button" class="btn btn-success btn-block">Button 3</button>
+                        <button type="button" class="btn btn-warning btn-block">Button 4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js scripts (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
